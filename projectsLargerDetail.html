@@ -118,7 +118,7 @@
 					</a>
                   This game finished second in Rising star and joint fourth across Rising Star &amp; Search for a star(Final year and Masters). I was subsiquently nominated as a finalist for my game and associated coding challenge.
                     The project was to convert a simple 2D minesweeper game into something new, whilst maintaining a significant proportion of the provided code.</br>
-					<p>My main issues were performance related. I used the Unity profiler tool to identify a number of memory issues in the tile reveal functions. (Unoptimised recursion + material set pass calls)</p>				
+					<p>My main issues were performance related. I used the Unity profiler tool to determine that I had a recursive check for each cells unlock, looking at the same cell unnecessarily. Additionally, I was  setting the tiles material color and this was therefore generating a large number of set pass calls. This  was resolved by using material property blocks.</p>				
 				</div>
 				 
 			 </div> 
@@ -156,9 +156,11 @@
  <h5>Twitch Overlay Game (C# Unity)</h5>  
  </a> 
                     <p> Following a conversation with a streamer friend, I offered to make an interactive overlay game that his viewers could view and play with through their stream. Produced in Unit, it&nbsp; allows each chatter in the stream to join a character into the game, control and level it up through combat and interaction.</p>
-                    <p>The main issue I faced was getting to grips with working with a different API. Luckily, Twitch's documentation is very good and this was managable.Since release, I've been engaging with users to ensure that any issues are resolved and feedback considered for ongoing releases.</p>
-
-
+                    <p>The main issue I faced was the core interface to Twitch IRC. Maintaining connection via keepalive and parsing each message to extract the required information. Luckily, Twitch has very good documentation for their API, so once I got to grips with that, the project went much smoother.&nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>Since release, I've been engaging with users to ensure that any issues are resolved and feedback considered for ongoing releases.&nbsp;&nbsp;</p>
+                    <lu>
+					  
+ </li>
 				  <p></p>
 					
 			  </div>
@@ -199,8 +201,11 @@
 
 				                      <p>My target for the  summer following the first year at university was to complete a game that I could release on mobile, specifically to the Android Play Store.
 				                        The game was produced over a few weeks and delivers a feature complete game.</p>
-				                      <p>I used this project as a test bed to further develop my personal tools package. Something that I intend to maintain and develop. A collection of editor modifications and static extensions that can be used across multiple projects. I also took the oppurtunity to develop a number of editor extensions and debug tools to assist development. Such as data view panels, autoplay and CSV data loading.</p>
+				                      <p>Although not a particulaly technically challenging project. I used this project as a test bed to further develop my personal tools package. Something that I intend to maintain and develop. Predomently a collection of editor modifications and static extensions that can be used across multiple projects. I also took the oppurtunity to develop a number of editor extensions and debug tools to assist development. Such as data view panels, autoplay and CSV data loading.</p>
+<p >It still requires clean up and polish.&nbsp; I'm glad to be able to release my first game.</p>
+                    <p>&nbsp;</p>
 
+				  <p></p>
 					
 				</div>
 			 </div> 
